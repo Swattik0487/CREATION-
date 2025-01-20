@@ -1,0 +1,134 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f9;
+    line-height: 1.6;
+    transition: background-color 0.5s, color 0.5s;
+    scroll-behavior: smooth;
+}
+
+header {
+    background: linear-gradient(90deg, #005f73, #0a9396);
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    position: relative;
+}
+
+/* Header Container for Images */
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+/* First Image (Circular) */
+.header-image-rounded {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 2px solid white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Second Image (Rectangular) */
+.header-image {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border: 2px solid white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Dynamic Text Styling */
+#dynamic-title, #dynamic-text {
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+}
+
+/* Section Styling */
+.album-section, #office-bearers, #events {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Photo Section */
+.photo-section {
+    margin: 50px 0;
+    text-align: center;
+}
+
+.album-section h2, #office-bearers h2, #events h2 {
+    font-size: 2em;
+    color: #333;
+}
+
+.photo {
+    margin: 20px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.photo img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Office Bearers */
+.office-bearer {
+    margin: 20px;
+}
+
+.office-bearer h3 {
+    font-size: 1.5em;
+    color: #0a9396;
+}
+
+.office-bearer p {
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* Event Details */
+.event {
+    margin: 30px 0;
+}
+
+.event h3 {
+    font-size: 1.8em;
+    color: #0a9396;
+}
+
+.event-details-content {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    display: none;
+}
+
+.event-details {
+    padding: 10px 20px;
+    background-color: #0a9396;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.event-details:hover {
+    background-color: #005f73;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-image {
+        max-width: 90%;
+    }
+}

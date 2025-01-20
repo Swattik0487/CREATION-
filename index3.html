@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geoinformatics Society</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="logo.png" alt="Society Logo" class="header-image-rounded">
+            <img src="logo2.png" alt="Geoinformatics Logo" class="header-image">
+        </div>
+        <h1 id="dynamic-title">Welcome to the Geoinformatics Society</h1>
+        <p id="dynamic-text">Exploring the World Through GIS and Remote Sensing</p>
+    </header>
+
+    <div class="content">
+        <section id="society-album" class="album-section">
+            <h2>Society Album</h2>
+            <div class="photo" id="photo1">
+                <img src="project1.jpg" alt="Project 1">
+            </div>
+            <div class="photo" id="photo2">
+                <img src="project2.jpg" alt="Project 2">
+            </div>
+            <div class="photo" id="photo3">
+                <img src="project3.jpg" alt="Project 3">
+            </div>
+        </section>
+
+        <section id="office-bearers">
+            <h2>Office Bearers</h2>
+            <div class="office-bearer" id="president">
+                <h3>President</h3>
+                <p>John Doe</p>
+            </div>
+            <div class="office-bearer" id="treasurer">
+                <h3>Treasurer</h3>
+                <p>Jane Smith</p>
+            </div>
+            <div class="office-bearer" id="general-secretary">
+                <h3>General Secretary</h3>
+                <p>Mark Wilson</p>
+            </div>
+        </section>
+
+        <section id="events">
+            <h2>Upcoming Events</h2>
+            <div class="event">
+                <h3>Event 1: GIS Workshop</h3>
+                <p>Date: 15th January 2025</p>
+                <button class="event-details" onclick="toggleEventDetails('event1')">View Details</button>
+                <div id="event1" class="event-details-content" style="display:none;">
+                    <p>Details about GIS workshop...</p>
+                </div>
+            </div>
+            <div class="event">
+                <h3>Event 2: Remote Sensing Seminar</h3>
+                <p>Date: 25th February 2025</p>
+                <button class="event-details" onclick="toggleEventDetails('event2')">View Details</button>
+                <div id="event2" class="event-details-content" style="display:none;">
+                    <p>Details about remote sensing seminar...</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Geoinformatics Society. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
